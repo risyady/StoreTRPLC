@@ -27,13 +27,13 @@
 
     <ListView
         android:id="@+id/listMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/txtList"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:listSelector="@color/light_green"
-        tools:listitem="@layout/food_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        tools:listitem="@layout/food_item" />
 
 </RelativeLayout>

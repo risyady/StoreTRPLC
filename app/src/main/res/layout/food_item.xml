@@ -26,17 +26,53 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/foodPrice"
+        android:id="@+id/foodDesc"
         android:layout_below="@id/foodName"
+        android:layout_toEndOf="@id/foodImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Bakso adalah makanan yang terbuat dari daging pilihan dan merupakan makanan enak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/BannerRating"
+        android:layout_below="@id/foodDesc"
+        android:layout_toEndOf="@id/foodImage"
+        android:src="@drawable/star"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/foodRate"
+        android:layout_below="@id/foodDesc"
+        android:layout_toEndOf="@id/BannerRating"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="4.5"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodName"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
         android:layout_toEndOf="@id/foodImage"
         android:text="Food Price"
         android:textColor="@color/red"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="80dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginEnd="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

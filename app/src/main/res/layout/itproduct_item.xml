@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardITProduct"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:src="@drawable/laptop"
+                android:layout_width="120dp"
+                android:layout_height="170dp"/>
+
+            <TextView
+                android:id="@+id/txtProduct"
+                android:text="LENOVO IdeaCentre AIO 3 22IAP7"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgProduct"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_below="@id/txtProduct"
+                android:layout_toEndOf="@id/imgProduct"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:text="Processor: Intel Core i5-12450H, RAM: 1x 8GB SO-DIMM DDR4-3200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_below="@id/txtDescription"
+                android:layout_toEndOf="@id/imgProduct"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/blue"
+                android:text="Harga: Rp. 12.099.000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iconFav"
+                android:src="@drawable/star"
+                android:layout_below="@id/txtPrice"
+                android:layout_toEndOf="@id/imgProduct"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:id="@+id/txtPromo"
+                android:layout_below="@id/txtPrice"
+                android:layout_toEndOf="@id/iconFav"
+                android:textColor="@color/red"
+                android:text="Promo: Rp. 10.099.000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

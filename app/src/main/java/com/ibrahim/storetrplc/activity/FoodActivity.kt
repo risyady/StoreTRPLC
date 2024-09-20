@@ -1,11 +1,11 @@
-package com.ibrahim.storetrplc
+package com.ibrahim.storetrplc.activity
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.*
+import com.ibrahim.storetrplc.FoodAdapter
+import com.ibrahim.storetrplc.FoodModel
+import com.ibrahim.storetrplc.R
 
 class FoodActivity : AppCompatActivity() {
 
@@ -26,12 +26,14 @@ class FoodActivity : AppCompatActivity() {
      */
 
     private var listFood:ListView? = null
-    private var foodAdapter:FoodAdapter? = null
+    private var foodAdapter: FoodAdapter? = null
     private var foodArrayList:ArrayList<FoodModel>? = null
 
-    private val foodImageList = intArrayOf(R.drawable.bakso, R.drawable.gudeg, R.drawable.lumpia,
+    private val foodImageList = intArrayOf(
+        R.drawable.bakso, R.drawable.gudeg, R.drawable.lumpia,
         R.drawable.nasi_goreng, R.drawable.nasi_liwet, R.drawable.pempek, R.drawable.rawon,
-        R.drawable.rendang, R.drawable.sate, R.drawable.tengkleng)
+        R.drawable.rendang, R.drawable.sate, R.drawable.tengkleng
+    )
 
     private val foodNameList = arrayOf("Bakso", "Gudeg", "Lumpia", "Nasi Goreng", "Nasi Liwet",
         "Pempek", "Rawon", "Rendang", "Sate", "Tengkleng")

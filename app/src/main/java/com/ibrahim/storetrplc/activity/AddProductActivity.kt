@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ibrahim.storetrplc.R
 
-class ITProductActivity : AppCompatActivity() {
+class AddProductActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_itproduct)
-
-        val URLServer = "http://<Nanti Ganti>/server_ecommerce/allproduct.php"
+        setContentView(R.layout.activity_add_product)
     }
 }

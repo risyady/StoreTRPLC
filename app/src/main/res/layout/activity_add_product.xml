@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+
+    <TextView
+        android:id="@+id/txtNewProduct"
+        android:text="Entri New Product"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_below="@id/txtNewProduct"
+        android:layout_marginTop="50sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:hint="  Product Name"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@android:drawable/ic_menu_add"
+        android:background="@drawable/border_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_below="@id/editName"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:hint="  Price"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@android:drawable/star_on"
+        android:background="@drawable/border_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/editPromo"
+        android:layout_below="@id/editPrice"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:hint="  Promo"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@android:drawable/presence_away"
+        android:background="@drawable/border_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_below="@id/editPromo"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:hint="  Description"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:background="@drawable/border_style"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <EditText
+        android:id="@+id/editImage"
+        android:layout_below="@id/editDescription"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:hint="  Images URL"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@android:drawable/ic_media_next"
+        android:background="@drawable/border_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_below="@id/editImage"
+        android:layout_centerHorizontal="true"
+        android:text="Add Product"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="40dp"
+        android:drawableRight="@android:drawable/star_on"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

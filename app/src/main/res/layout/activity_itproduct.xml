@@ -33,6 +33,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
             tools:listitem="@layout/itproduct_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:layout_marginEnd="10dp" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

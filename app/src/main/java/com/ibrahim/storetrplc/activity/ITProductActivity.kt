@@ -9,6 +9,6 @@ class ITProductActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_itproduct)
 
-
+        val URLServer = "http://<change>/ecommerce/dbconnect.php"
     }
 }

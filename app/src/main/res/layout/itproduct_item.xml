@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardITProduct"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         app:cardCornerRadius="20dp"
         android:elevation="20dp"
         android:layout_width="match_parent"
@@ -18,7 +20,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imgProduct"
+                android:id="@+id/imageProduct"
                 android:src="@drawable/laptop"
                 android:layout_width="120dp"
                 android:layout_height="170dp"/>
@@ -29,7 +31,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
-                android:layout_toEndOf="@id/imgProduct"
+                android:layout_toEndOf="@id/imageProduct"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -37,7 +39,7 @@
             <TextView
                 android:id="@+id/txtDescription"
                 android:layout_below="@id/txtProduct"
-                android:layout_toEndOf="@id/imgProduct"
+                android:layout_toEndOf="@id/imageProduct"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:textSize="13sp"
@@ -50,7 +52,7 @@
             <TextView
                 android:id="@+id/txtPrice"
                 android:layout_below="@id/txtDescription"
-                android:layout_toEndOf="@id/imgProduct"
+                android:layout_toEndOf="@id/imageProduct"
                 android:layout_marginTop="30dp"
                 android:textStyle="bold"
                 android:textSize="13sp"
@@ -63,7 +65,7 @@
                 android:id="@+id/iconFav"
                 android:src="@drawable/star"
                 android:layout_below="@id/txtPrice"
-                android:layout_toEndOf="@id/imgProduct"
+                android:layout_toEndOf="@id/imageProduct"
                 android:layout_marginStart="100dp"
                 android:layout_marginTop="15dp"
                 android:layout_width="25dp"
@@ -71,15 +73,16 @@
 
             <TextView
                 android:id="@+id/txtPromo"
-                android:layout_below="@id/txtPrice"
-                android:layout_toEndOf="@id/iconFav"
-                android:textColor="@color/red"
-                android:text="Promo: Rp. 10.099.000"
-                android:textSize="13sp"
-                android:textStyle="bold"
-                android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrice"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="19dp"
+                android:layout_toEndOf="@id/iconFav"
+                android:text="Promo: Rp. 10.099.000"
+                android:textColor="@color/green"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

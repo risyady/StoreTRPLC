@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".activity.ITProductActivity">
 
     <TextView
@@ -11,19 +12,45 @@
         android:text="Information Technology Product"
         android:layout_centerHorizontal="true"
         android:textSize="22sp"
-        android:textColor="@color/green"
+        android:textColor="@color/red"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recITProduct"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
         android:layout_below="@id/txtITProduct"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recITProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtITProduct"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            tools:listitem="@layout/itproduct_item"
+            android:layout_marginEnd="10dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_centerInParent="true"
+        android:layout_height="60dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/brightgreen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
 </RelativeLayout>

@@ -9,6 +9,7 @@ class ITProductActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_itproduct)
 
+        // Ganti variabel URLServer dengan memanfaatkan ip addr
         val URLServer = "http://<Nanti Ganti>/server_ecommerce/allproduct.php"
     }
 }

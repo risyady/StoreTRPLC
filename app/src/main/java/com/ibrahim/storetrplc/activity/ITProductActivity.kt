@@ -54,9 +54,9 @@ class ITProductActivity : AppCompatActivity() {
 
     private fun getProduct() {
         // Ganti variabel URLServer dengan memanfaatkan ip addr
-        val url = "http://192.168.18.16/server_ecommerce/allproduct.php"
+        val URL_SERVER = "http://192.168.89.5/server_ecommerce/allproduct.php"
         val queue = Volley.newRequestQueue(this@ITProductActivity)
-        val request = JsonArrayRequest(Request.Method.GET, url, null, {
+        val request = JsonArrayRequest(Request.Method.GET, URL_SERVER, null, {
             response ->
             try {
                 productList.clear()

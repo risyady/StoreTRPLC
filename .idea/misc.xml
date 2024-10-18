@@ -4,13 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/border_style.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_add_product.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_add_product.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_food.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/activity_itproduct.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/food_item.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/itproduct_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/itproduct_item.xml" value="0.1" />
       </map>
     </option>
   </component>

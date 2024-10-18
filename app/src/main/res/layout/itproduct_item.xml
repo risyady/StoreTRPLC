@@ -70,10 +70,25 @@
                 android:src="@drawable/star"
                 android:layout_below="@id/txtPrice"
                 android:layout_toEndOf="@id/imageProduct"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_width="25dp"
                 android:layout_height="25dp"/>
+
+            <TextView
+                android:id="@+id/txtDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrice"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/iconFav"
+                android:text="Diskon\nRp. 10.099.000"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtPromo"
@@ -81,13 +96,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtPrice"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="19dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginEnd="10dp"
-                android:layout_toEndOf="@id/iconFav"
-                android:text="Promo: Rp. 10.099.000"
+                android:layout_toEndOf="@id/txtDiscount"
+                android:text="Promo:\nRp. 10.099.000"
                 android:textColor="@color/green"
-                android:textSize="13sp"
+                android:textSize="10sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>

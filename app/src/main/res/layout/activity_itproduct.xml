@@ -26,10 +26,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="search product by name"
+        android:layout_below="@id/txtITProduct"
+        android:textColorHint="@color/gray"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:drawableTint="@color/black"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnHarga"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:background="@drawable/border_style"
+        android:layout_below="@id/editSearch"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:drawableRight="@android:drawable/arrow_up_float"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="35dp"/>
+
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeLayout"
-        android:layout_below="@id/txtITProduct"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnHarga"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -39,7 +71,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/txtITProduct"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             tools:listitem="@layout/itproduct_item"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:layout_marginEnd="10dp" />

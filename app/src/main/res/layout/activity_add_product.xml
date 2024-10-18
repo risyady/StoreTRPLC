@@ -60,7 +60,7 @@
         android:hint="  Promo"
         android:textSize="17sp"
         android:textStyle="bold"
-        android:drawableLeft="@android:drawable/presence_away"
+        android:drawableLeft="@android:drawable/ic_menu_call"
         android:background="@drawable/border_style"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
@@ -103,32 +103,33 @@
         android:layout_below="@id/editImage"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="70dp">
         <TableRow>
-            <Button
-                android:id="@+id/btnAdd"
-                android:text="Add Product"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:backgroundTint="@color/green"
-                android:drawableRight="@android:drawable/ic_menu_add"
-                android:background="@drawable/border_style"
-                android:layout_width="190dp"
-                android:layout_height="60dp"/>
 
             <Button
-                android:id="@+id/btnSearch"
+                android:id="@+id/btnAdd"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_style"
+                android:backgroundTint="@color/green"
+                android:drawableRight="@android:drawable/ic_menu_add"
+                android:text="Add Product"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/border_style"
+                android:backgroundTint="@color/green"
+                android:drawableRight="@android:drawable/ic_menu_search"
                 android:text="List"
                 android:textColor="@color/white"
-                android:textStyle="bold"
                 android:textSize="15sp"
-                android:backgroundTint="@color/green"
-                android:layout_marginLeft="30dp"
-                android:drawableRight="@android:drawable/ic_menu_search"
-                android:background="@drawable/border_style"
-                android:layout_width="150dp"
-                android:layout_height="60dp"/>
+                android:textStyle="bold" />
         </TableRow>
     </TableLayout>
 </RelativeLayout>

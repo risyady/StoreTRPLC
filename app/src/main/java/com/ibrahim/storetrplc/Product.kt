@@ -4,6 +4,7 @@ data class Product(
     var name:String,
     var price:String,
     var promo:String,
+    var discount:String,
     var description:String,
     var images:String
 

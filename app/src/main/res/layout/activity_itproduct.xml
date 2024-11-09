@@ -91,7 +91,7 @@
         android:src="@android:drawable/ic_input_add"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/brightgreen"
+        android:backgroundTint="@color/bright_green"
         android:layout_width="60dp"
         android:layout_height="60dp"/>
 </RelativeLayout>
